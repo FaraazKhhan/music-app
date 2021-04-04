@@ -1,0 +1,118 @@
+@import './button.css';
+@import './header.css';
+
+*, *::after, ::before { box-sizing: border-box; }
+
+* { margin: 0; padding: 0; }
+
+:root {
+    --primaryColor-1    : #031A38;
+    --primaryColor-2    : #00466A;
+    --primaryColor-3    : #007788;
+    --primaryColor-4    : #1aa7bc;
+
+    --accentColor-1     : #c5930d;
+    --accentColor-2     : #D6A419;
+
+    --blueishGreenShades: #00A88B, #7FD57A;
+    --yellowShades: #D6A419, #F9F871;
+    --purpleShades:  #FFAEDB, #C88DBF, #936E9F;
+
+    --othercolors:#273036, #0998FA, #EBEDEF, #DEE0E2;
+
+    --navBtnBg: #DEE0E2;
+
+    --headingColor      : var(--primaryColor-2);
+    --subheadingColor   : ;
+    --textColor         : ;
+
+    --btnTextColor      : white;
+    --btnTextColorHover : #333;
+}
+
+body {
+    background: #F3F4F5;
+    font-family: quicksand;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: poppins;
+}
+
+main {
+    height: 85vh; width: 85vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+div {
+    /* border: 1px dotted green; */
+}
+
+.hero-content {
+    align-self: flex-start;
+    margin-top: 16pt;
+}
+
+.hero-image {
+    display: grid;
+}
+
+.hero-content > * {
+    /* margin: 10pt 30pt 0pt 0pt; */
+    /* border: 1px dotted red; */
+}
+
+.hero-content > h1 {
+    color: var(--headingColor);
+    font-size: 30pt;
+    margin-top: 14pt;
+}
+
+.sub-heading {
+    color: #c9cccf;
+    font-size: 25pt;
+    margin-top: 0pt;
+    font-family: poppins;
+    font-weight: 700;
+}
+
+.hero-content > p {
+    font-size: 12pt;
+    line-height: 30px;
+    color: #333;
+    margin-top: 14pt;
+    padding-right: 50px;
+}
+
+.hero-content > button {
+    margin-top: 14pt;
+}
+
+.hero-image {
+    width: 100%;
+    justify-items: flex-end;
+}
+
+.hero-image > img {
+    width: 80%;
+    border-radius: 30px;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+.wave-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.wave-container > svg {
+    display: block;
+}

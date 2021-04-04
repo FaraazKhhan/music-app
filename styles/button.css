@@ -1,0 +1,47 @@
+button {
+    height: 36px;
+    min-width: fit-content;
+    padding: 0 16px;
+    border-radius: 5px;
+
+    outline: none;
+
+    background: linear-gradient(90deg, var(--accentColor-1), var(--accentColor-2));
+    font-size: 12pt;
+    font-weight: 600;
+    color: var(--btnTextColor);
+    /* color: white; */
+
+    border: none;
+
+    box-shadow: 0.5px 1px 2px 0.5px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, var(--accentColor-1), var(--accentColor-2));
+    color: var(--btnTextColorHover);
+}
+
+/* button {
+    background: var(--accentColor-1);
+}
+
+button:hover {
+    background: var(--accentColor-2);
+} */
+
+
+/* mid-emphasis-button */
+.mid-emphasis-btn {
+    background: transparent;
+    border: 2px solid var(--accentColor-1);
+    color: var(--accentColor-1);
+}
+.mid-emphasis-btn:hover {
+    color: var(--accentColor-1);
+    color: var(--btnTextColorHover);
+    border: none;
+}
